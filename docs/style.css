@@ -1,0 +1,125 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	color: green;
+
+	font-size: 20px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	background-color: rgb(62 157 0);
+
+	font-size: 22px;
+	font-family: sans-serif;
+
+	width: 100vw;
+}
+
+nav h1 {
+	color: white;
+}
+
+/*
+nav * {
+	display: block;
+}
+*/
+
+nav a {
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	padding: 4px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -10;
+	
+	background-position: center center;
+	background-repeat: no-repeat;
+	filter: brightness(0.6);
+	background-size: cover;
+}
+
+.cow {
+	background-image: url("assets/cow_white.jpg")
+}
+
+.farm{
+	background-image: url("assets/farm.jpg")
+}
+
+#main {
+	margin: 0 100px 100px 100px;
+	color: white;
+	text-align: center;
+}
+
+#main > p {
+	font-size: 24px
+}
+
+.title {
+	font-size: 50px;
+	text-align: left;
+}
+
+.right * {
+	font-size: 38px !important;
+	text-align: right;
+}
+
+@keyframes spinny {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.spin {
+	display: block;
+	width: 500px;
+	height: auto;
+	animation: 10s infinite linear spinny;
+}
+
+.service {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+
+	margin: 10px 0;
+}
+
+.service p {
+	padding: 10px;
+	flex: 0.5;
+	font-size: 28px;
+}
+
+.service img {
+	max-width: 40em;
+	max-height: 20em;
+}
